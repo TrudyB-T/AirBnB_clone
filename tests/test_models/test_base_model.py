@@ -127,5 +127,6 @@ class TestBase(unittest.TestCase):
         new_model = BaseModel(my_model_dict)
         self.assertNotEqual(self.my_model, new_model)
 
+
 if __name__ == "__main__":
     unittest.main()
