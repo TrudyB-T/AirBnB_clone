@@ -2,18 +2,13 @@
 """ Initializes Python Package"""
 
 from models.engine.file_storage import FileStorage
-from models.base_model import BaseModel
-from models.user import User
-from models.place import Place
-from models.state import State
-from models.city import City
-from models.amenity import Amenity
-from models.review import Review
-
-classes = {"User": User, "BaseModel": BaseModel,
-           "Place": Place, "State": State,
-           "City": City, "Amenity": Amenity,
-           "Review": Review}
+from .base_model import BaseModel
+from .user import User
+from .place import Place
+from .state import State
+from .city import City
+from .amenity import Amenity
+from .review import Review
 
 storage = FileStorage()
 storage.reload()
