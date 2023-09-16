@@ -138,16 +138,16 @@ class HBNBCommand(cmd.Cmd):
         args = shlex.split(args)
         if len(args) == 0:
             print("** class name missing **")
-            return False
+            return
         elif len(args) == 1:
             print("** instance id missing **")
-            return False
+            return
         elif len(args) == 2:
             print("** attribute name missing **")
             return
         elif len(args) == 3:
             print("** value missing **")
-            return False
+            return
         try:
             eval(args[0])
         except NameError:
@@ -159,7 +159,7 @@ class HBNBCommand(cmd.Cmd):
             obj_value = obj_dict[key]
         except KeyError:
             print("** no instance found **")
-            return False
+            return
         try:
             attr_type = type(getattr(obj_value, args[2]))
             args[3] = attr_type(args[3])

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Class BaseModel"""
-import uuid
+from uuid import uuid4
 from datetime import datetime
 import models
 
@@ -16,24 +16,24 @@ class BaseModel:
                    updated_at: datetime is updated every
                                time you change your object
     """
-
     def __init__(self, *args, **kwargs):
+        """Initializes a BaseModel.
+        Args:
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
         """
-            Initializes objects
-        """
-        if (len(kwargs) == 0):
-            self.id = str(uuid.uuid4())
-            self.created_at = datetime.now()
-            self.updated_at = datetime.now()
-            models.storage.new(self)
+        time_format = "%Y-%m-%dT%H:%M:%S.%f"
+        self.id = str(uuid4())
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key == "created_at" or key == "updated_at":
+                    self.__dict__[key] = datetime.strptime(value, time_format)
+                else:
+                    self.__dict__[key] = value
         else:
-            kwargs["created_at"] = datetime.strptime(kwargs["created_at"],
-                                                     "%Y-%m-%dT%H:%M:%S.%f")
-            kwargs["updated_at"] = datetime.strptime(kwargs["updated_at"],
-                                                     "%Y-%m-%dT%H:%M:%S.%f")
-            for key, val in kwargs.items():
-                if "__class__" not in key:
-                    setattr(self, key, val)
+            models.storage.new(self)
 
     def __str__(self):
         """
@@ -54,7 +54,7 @@ class BaseModel:
             updates the public instance attribute
             updated_at with the current datetime
         """
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.today()
         models.storage.save()
 
     def to_dict(self):
