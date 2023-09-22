@@ -1,7 +1,7 @@
 # 0x01. AirBnB clone - Web static
 
 ## Requirements:
-Your code should be W3C compliant and validate with [W3C-Validator](W3C-Validator)
+Your code should be W3C compliant and validate with [W3C-Validator](https://validator.w3.org/)
 ---
 
 ### [0. Inline styling](./0-index.html)
