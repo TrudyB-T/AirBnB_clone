@@ -58,4 +58,4 @@ Your code should be W3C compliant and validate with [W3C-Validator](https://gith
 ---
 
 ## Author
-* **Dorothy Dede Quao** - [Dedeyd70](https://github.com/Dedeyd70)
+* **Trudy Bannerman-Williams** - [TrudyB-T](https://github.com/TrudyB-T/AirBnB_clone.git)
