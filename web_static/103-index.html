@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+    <title>AirBnB clone</title>
+  </head>
+  <body>
+    <header>
+	    <div class="mobile_nav">
+        <label for="main_check" class="main_nav_burguer">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check">
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
+              </ul>
+        </nav><!-- final del main_nav_bar -->
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>Oklahoma, Georgia...</h4>
+          <ul class="popover">
+            <li><h2>Oklahoma:</h2>
+              <ul>
+                <li>Page</li>
+                <li>Page2</li>
+              </ul>
+            </li>
+            <li><h2>Georgia:</h2>
+              <ul>
+                <li>Atlanta</li>
+                <li>Savannah</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Pool, Gym...</h4>
+          <ul class="popover">
+            <li>Air condition</li>
+	    <li>Parking</li>
+	    <li>Toiletries</li>
+	    <li>Wifi</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section> <!-- end fiter-->
+
+      <section class="places">
+        <h1>Places</h1>
+        <article><!-- My home -->
+          <div class="article_places_header">
+            <h2>My home</h2>
+            <div class="price_by_night">
+	    <div class="price">
+		    $200
+	  </div>	    
+          </div>
+          <div class="information">
+            <div class="max_guest">
+            <div class="guest_icon">
+            </div>
+	    <div class="guest_number">
+                                <h2>5 Guests</h2>
+                            </div>
+                        </div>
+            <div class="number_rooms">
+		    <div class="rooms_icon">
+                            </div>
+                            <div class="rooms_number">
+                                <h2>5 Bedrooms</h2>
+                            </div>
+                        </div>
+            <div class="number_bathrooms">
+		    <div class="bathrooms_icon">
+                            </div>
+                            <div class="bathrooms_number">
+                                <h2>5 Bathrooms</h2>
+                            </div>
+                        </div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Rich Bossington</p>
+          </div><!-- end user -->
+          <div class="description">
+		  <p> Welcome to this luxurious 5 bedroom townhouse, located in the heart of the city. It is 100km away from the airport and 60km away from the biggest mall in the country. It has three master bedrooms and 2 guestrooms with highspeed Wi-fi. It is baby proofed and suitable for family vacations and hangouts. Book your stay to enjoy a refreshing getaway from the mundaness of life.</p>          
+	  </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Bob Dylan the 24th October 2023</h3>                <p>The ambience is great</p>              
+	      </li>
+              <li>
+                <h3>From Connor 20th August 2023</h3>
+                <p>10 out of 10</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end My home -->
+
+        <article>
+          <h2>Tiny house</h2>
+          <div class="price_by_night">
+		   <div class="price">
+                                $60
+                            </div>
+                        </div>
+                    </div>
+          <div class="information">
+            <div class="max_guest">
+		    <div class="guest_icon">
+                            </div>
+                            <div class="guest_number">
+                                <h2>3 Guests</h2>
+                            </div>
+                        </div>
+            <div class="number_rooms">
+		    <div class="rooms_icon">
+                            </div>
+                            <div class="rooms_number">
+                                <h2>3 Bedrooms</h2>
+                            </div>
+                        </div>
+            <div class="number_bathrooms">
+		     <div class="bathrooms_icon">
+                            </div>
+                            <div class="bathrooms_number">
+                                <h2>3 Bathrooms</h2>
+                            </div>
+                        </div>
+                    </div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Wealth Richson</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This place is an exotic, secluded place far from the noise and chaos of the inner city. Eventhough secluded it is surrounded by local marts with options of commodities and food, you will be spoilt for choice. It has 3 bedrooms, 3 bathrooms, a spacious kitchen and a pool.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Max the 6th July 2021</h3>
+                <p>Great place</p>
+              </li>
+              <li>
+                <h3>From Connor 15th June 2023</h3>
+                <p>Great place</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">
+		  <div class="price">
+                                $100
+                            </div>
+                        </div>
+                    </div>
+          <div class="information">
+            <div class="max_guest">
+		    <div class="max_guest">
+                            <div class="guest_icon">
+                            </div>
+                            <div class="guest_number">
+                                <h2>2 Guests</h2>
+                            </div>
+                        </div>
+            <div class="number_rooms">
+		     <div class="rooms_icon">
+                            </div>
+                            <div class="rooms_number">
+                                <h2>1 Bedroom</h2>
+                            </div>
+                        </div>
+            <div class="number_bathrooms">
+		     <div class="rooms_icon">
+                            </div>
+                            <div class="rooms_number">
+                                <h2>1 Bedroom</h2>
+                            </div>
+                        </div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Onika Sleezy</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This suite is suitable for a romantic private getaway. It has one bedroom,a gaming room, a wahser and dryer, a pool table, a swimming pool, a movie room, a bowling room and a sauna. It is also surrounded by high quality restaurants, tourists destination
+           </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Coco Branson on  25th September, 2023</h3>
+                <p> Great place</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        </section> <!-- end section -->
+    </div>
+    <footer aria-label="Footer brand information">
+      <p>Best School</p>
+    </footer>
+  </body>
+</html>
